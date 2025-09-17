@@ -1,0 +1,125 @@
+.skills-container {
+  padding: 100px 24px;
+  background-color: #fff;
+}
+
+.skills-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skills-description {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 50px;
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.7;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.skill-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.skill-icon {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+}
+
+.skill-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.skills-extra {
+  text-align: center;
+}
+
+.skills-extra h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.skill-tag {
+  background: linear-gradient(90deg, rgba(0, 219, 222, 0.2) 0%, rgba(252, 0, 255, 0.2) 100%);
+  color: #333;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+@media screen and (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 20px;
+  }
+  
+  .skill-card {
+    padding: 20px 15px;
+  }
+  
+  .skill-icon {
+    font-size: 2.8rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .skills-container {
+    background-color: #121212;
+  }
+  
+  .skills-description {
+    color: #ccc;
+  }
+  
+  .skill-card {
+    background-color: #1e1e1e;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .skill-name {
+    color: #f0f0f0;
+  }
+  
+  .skills-extra h3 {
+    color: #f0f0f0;
+  }
+  
+  .skill-tag {
+    color: #f0f0f0;
+    background: linear-gradient(90deg, rgba(0, 219, 222, 0.15) 0%, rgba(252, 0, 255, 0.15) 100%);
+  }
+}
